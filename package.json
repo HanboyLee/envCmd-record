@@ -1,0 +1,17 @@
+{
+    "name": "env-file",
+    "version": "10.1.0",
+    "description": "env-cmd basic env file example",
+    "scripts": {
+        "prod": "env-cmd --verbose -f .env-prod.env nodemon index.js",
+        "dev": "env-cmd --verbose -f .env-dev.env nodemon index.js",
+        "test": "env-cmd --verbose -f .env-test.env nodemon index.js"
+    },
+    "dependencies": {
+        "chalk": "^5.0.1",
+        "env-cmd": "^10.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    }
+}
